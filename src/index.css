@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 
+/* Animation classes for specific use case */
+.custom-pulse:hover {
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulseAndShadow 2s infinite;
+}
+
 /* Font imports */
 @font-face {
 	font-family: 'Oxanium';

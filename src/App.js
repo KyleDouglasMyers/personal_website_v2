@@ -1,20 +1,31 @@
-import Navbar from './components/Navbar'
 import classNames from 'classnames';
+
+import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar'
+
+
 
 function App(){
 
     //Global app tailwin css definitons:
     const appClassNames = classNames(
         'font-[Oxanium]',
-        'min-w-full',
-        'min-h-full'
+        'min-h-[100vh]',
+        'min-w-[100vw]',
+        'flex',
+        'flex-col'
     )
-    const containerSection = classNames('')
+    const containerSectionClasses = classNames(
+        'grow',
+        'flex',
+        'flex-row'
+    )
 
     return(
         <div className={appClassNames}>
             <Navbar/>
-            <div className={containerSection}>
+            <div className={containerSectionClasses}>
+                <Sidebar/>
             </div>
 
         </div>

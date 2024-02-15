@@ -9,36 +9,40 @@ function Navbar() {
     const navBarClasses = classNames(
         'flex',
         'flex-row',
-        'mt-[5vh]',
-        'mb-[5vh]',
-        'ml-[7vw]',
-        'mr-[7vw]',
+        'pt-[5vh]',
+        'pb-[5vh]',
+        'pl-[7vw]',
+        'pr-[7vw]',
         'justify-evenly',
         'text-[1.2vw]'
         
     )
     
     // Home button tailwind classes
-    const homeButtonClasses = classNames('')
+    const homeButtonClasses = classNames(
+        'p-2',
+        'cursor-pointer',
+        'custom-pulse'
+        )
 
     // Individual nav button classes
     const navItemClasses = classNames(
         'p-2',
         'cursor-pointer',
-        'animate-pulse'
+        'custom-pulse'
     )
 
 
     // Output
     return (
         <div className={navBarClasses}>
-            <SectionLink path='/home' className={homeButtonClasses}>Home</SectionLink>
-            <SectionLink path='/about' className={navItemClasses}>About</SectionLink>
-            <SectionLink path='/experience' className={navItemClasses}>Experience</SectionLink>
-            <SectionLink path='/skills' className={navItemClasses}>Skills</SectionLink>
-            <SectionLink path='/projects' className={navItemClasses}>Projects</SectionLink>
-            <SectionLink path='/contact' className={navItemClasses}>Contact</SectionLink>
-            <SectionLink path='/extra' className={navItemClasses}>Extra</SectionLink>
+            <SectionLink section='/home' className={homeButtonClasses}>Home</SectionLink>
+            <SectionLink section='/about' className={navItemClasses}>About</SectionLink>
+            <SectionLink section='/experience' className={navItemClasses}>Experience</SectionLink>
+            <SectionLink section='/skills' className={navItemClasses}>Skills</SectionLink>
+            <SectionLink section='/projects' className={navItemClasses}>Projects</SectionLink>
+            <SectionLink section='/contact' className={navItemClasses}>Contact</SectionLink>
+            <SectionLink section='/extra' className={navItemClasses}>Extra</SectionLink>
         </div>
     );
 }
