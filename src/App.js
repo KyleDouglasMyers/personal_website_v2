@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar'
+import classNames from 'classnames';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+
+    //Global app tailwin css definitons:
+    const appClassNames = classNames(
+        'font-[Oxanium]',
+        'min-w-full',
+        'min-h-full'
+    )
+    const containerSection = classNames('')
+
+    return(
+        <div className={appClassNames}>
+            <Navbar/>
+            <div className={containerSection}>
+            </div>
+
+        </div>
+    )
 }
-
 export default App;
