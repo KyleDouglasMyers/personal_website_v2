@@ -42,7 +42,7 @@ function Navbar() {
             <SectionLink section='/skills' className={navItemClasses}>Skills</SectionLink>
             <SectionLink section='/projects' className={navItemClasses}>Projects</SectionLink>
             <SectionLink section='/contact' className={navItemClasses}>Contact</SectionLink>
-            <SectionLink section='/extra' className={navItemClasses}>Extra</SectionLink>
+            {/* <SectionLink section='/extra' className={navItemClasses}>Extra</SectionLink> */}
         </div>
     );
 }

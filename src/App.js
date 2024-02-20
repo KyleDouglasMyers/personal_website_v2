@@ -1,11 +1,23 @@
+import { useHorizontalScroll } from './hooks/useHorizontalScroll';
+import { useSelector } from 'react-redux';
+
 import classNames from 'classnames';
 
-import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import HorizontalScrollSection from './components/HorizontalScrollSection';
+import Page from './pages/Page';
 
 
 
-function App(){
+
+function App() {
+
+    const [scrollSectionRef, appRef] = useHorizontalScroll();
+    
+    const pageState = useSelector((state) => {
+        return state.nav.page
+    })
 
     //Global app tailwin css definitons:
     const appClassNames = classNames(
@@ -13,22 +25,31 @@ function App(){
         'min-h-[100vh]',
         'min-w-[100vw]',
         'flex',
-        'flex-col'
+        'flex-col',
     )
     const containerSectionClasses = classNames(
         'grow',
         'flex',
-        'flex-row'
+        'flex-row',
+
     )
+    return (
+        <>
+            <div className={appClassNames} ref={appRef}>
+                <Navbar />
+                <div className={containerSectionClasses}>
+                    <Sidebar />
+                    <HorizontalScrollSection ref={scrollSectionRef} />
+                </div>
 
-    return(
-        <div className={appClassNames}>
-            <Navbar/>
-            <div className={containerSectionClasses}>
-                <Sidebar/>
             </div>
+            {(pageState === '') ? false : 
+            <Page>
 
-        </div>
+            </Page>
+            }
+        </>
+
     )
 }
 export default App;

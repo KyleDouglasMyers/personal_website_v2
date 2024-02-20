@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { navReducer, changeSection, handleModal } from "./slices/navSlice";
+import { navReducer, changeSection, setPageState } from "./slices/navSlice";
 
 const store = configureStore({
     reducer: {
@@ -7,4 +7,4 @@ const store = configureStore({
     }
 });
 
-export {store, changeSection, handleModal};
+export {store, changeSection, setPageState};

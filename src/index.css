@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+	overflow: hidden;
+}
 
 /* Animation classes for specific use case */
 .custom-pulse:hover {
