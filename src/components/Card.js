@@ -26,13 +26,11 @@ function Card({ className, children, id = 'pageName', title, titleClasses, bodyC
     );
 
     const titleClassNames = classNames(
-        'max-w-inherit',
         'text-[4vh]',
         titleClasses
     )
 
     const bodyClassNames = classNames(
-        'max-w-inherit',
         'whitespace-pre-line',
         'mt-[2vh]',
         'mb-[2vh]',

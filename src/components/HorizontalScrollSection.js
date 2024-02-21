@@ -89,7 +89,8 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
     // Tailwin css classnames
     const HorizontalScrollSectionClasses = classNames(
         'flex',
-        ' overflow-y-hidden',
+        'flex-row',
+        'overflow-y-hidden',
         'whitespace-nowrap',
         'scrollbar-hide'
     )
@@ -103,11 +104,12 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
     )
 
     const experienceCardClassNames = classNames(
-        'min-w-[10vw]',
-        'max-w-[31vw]',
-        'min-h-[75%]',
+        'min-w-[30vw]',
+        'min-h-[30vh]',
+        'max-w-[35vw]',
+        'max-h-[80vh]',
         'p-[2vh]',
-        'm-[3vh]',
+        'm-[5vh]',
         'shadow-[0_0_30px_0px_rgba(0,0,0,0.4)]'
     )
 
@@ -115,10 +117,11 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
         'm-3',
         'p-3',
         'shadow',
+        'text-[1.8vh]'
     )
 
     const projectTitleClassnames = classNames(
-        'text-[2vh]',
+        'text-[3vh]',
     )
 
     const formLabelClasses = classNames(
@@ -166,22 +169,22 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
                         <img className='w-[20vw] h-[15vh] bg-black object-right mt-7 translate-x-52' alt='certificate' />
                     </div></div>
             </SectionPanel>
-            <SectionPanel ref={experienceRef} title='Experience' className='min-w-[1600px]'>
+            <SectionPanel ref={experienceRef} title='Experience' className='min-w-[125vw]'>
                 <div className='flex flex-row'>
-                    <Card className={experienceCardClassNames} title='Industrial Projects' date='August 2022 - Current'>
+                    <Card className={experienceCardClassNames} title='Industrial Projects' date='August 2022 - Current' id='industrialProjectsPage'>
                         Lead Software Engineer{'\n\n'}
                         Responsible for the website creation, including
                         full stack development and deployment. {'\n\n'}
                         Research into purchase order automation machine learning and applying computer vision principles to scanned PDFS.
                     </Card>
-                    <Card className={experienceCardClassNames} title='Morgan Stanley' date='January 2021 - April 2021'>
+                    <Card className={experienceCardClassNames} title='Morgan Stanley' date='January 2021 - April 2021' id='morganStanleyPage'>
                         Software Engineer Intership {'\n\n'}
                         Created a POC API Gateway built in spring used to manage and filter
                         all incoming transacation requests leverage Kerberos authenticaltion and
                         authorization functionality.{'\n\n'}
                         Built using Spring Cloud Gateway on top of the Spring Boot framework for Java.
                     </Card>
-                    <Card className={experienceCardClassNames} title='Fednav' date='May 2020 - August 2020'>
+                    <Card className={experienceCardClassNames} title='Fednav' date='May 2020 - August 2020' id='fednavPage'>
                         Leadership / Software Engineeer Internship {'\n\n'}
                         Resonsilbe for analysis and translating systems designed in C into GO.{'\n\n'}
                         Presented to the entire Port of Montreal (200+ people) and the Board of Directors for
@@ -189,7 +192,7 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
                     </Card>
                 </div>
             </SectionPanel>
-            <SectionPanel ref={skillsRef} title='Skills' className='min-w-[1100px]'>
+            <SectionPanel ref={skillsRef} title='Skills' className='min-w-[75vw]'>
                 <p className='whitespace-pre-line text-[1.4vw] mb-[4vh]'>
                     During the past 4-5 years, I've gathered a wide variety fo skill
                     to use at my disposal. {'\n\n'}
@@ -197,7 +200,7 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
                     I've worked with:
                 </p>
                 <div className='flex flex-row text-[1.5vw]'>
-                    <ul className="min-w-[300px] ml-3 mr-3">
+                    <ul className="min-w-[20vw] ml-[2vw] mr-2[vw]">
                         <li className='mb-2'>Frameworks and Libraries:</li>
                         <li className={skillListItemClasses}><BiChevronRight />OpenCV</li>
                         <li className={skillListItemClasses}><BiChevronRight />NumPy</li>
@@ -211,7 +214,7 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
                         <li className={skillListItemClasses}><BiChevronRight />Flask</li>
 
                     </ul>
-                    <ul className="min-w-[200px] ml-3 mr-3">
+                    <ul className="min-w-[15vw] ml-[2vw] mr-2[vw]">
                         <li className='mb-2'>Languages:</li>
                         <li className={skillListItemClasses}><BiChevronRight />Python</li>
                         <li className={skillListItemClasses}><BiChevronRight />Java</li>
@@ -224,7 +227,7 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
                         <li className={skillListItemClasses}><BiChevronRight />OCamel</li>
                         <li className={skillListItemClasses}><BiChevronRight />Go</li>
                     </ul>
-                    <ul className="min-w-[500px] ml-3 mr-3">
+                    <ul className="min-w-[20vw] ml-[2vw] mr-2[vw]">
                         {/* expand these sections to talk more about them */}
                         <li className='mb-2'>Concepts and Theory</li>
                         <li className={skillListItemClasses}><BiChevronRight />Algorithms and Data Structures</li>
