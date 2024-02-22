@@ -97,7 +97,6 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
 
     const skillListItemClasses = classNames(
         'flex',
-        'flexrow',
         'items-center',
         'text-center',
         'text-[2vh]'
@@ -169,8 +168,8 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
                         <img className='w-[20vw] h-[15vh] bg-black object-right mt-7 translate-x-52' alt='certificate' />
                     </div></div>
             </SectionPanel>
-            <SectionPanel ref={experienceRef} title='Experience' className='min-w-[125vw]'>
-                <div className='flex flex-row'>
+            <SectionPanel ref={experienceRef} title='Experience' className='min-w-[130vw]'>
+                <div className='flex flex-row justify-around'>
                     <Card className={experienceCardClassNames} title='Industrial Projects' date='August 2022 - Current' id='industrialProjectsPage'>
                         Lead Software Engineer{'\n\n'}
                         Responsible for the website creation, including
@@ -188,7 +187,7 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
                         Leadership / Software Engineeer Internship {'\n\n'}
                         Resonsilbe for analysis and translating systems designed in C into GO.{'\n\n'}
                         Presented to the entire Port of Montreal (200+ people) and the Board of Directors for
-                        an ongoing strategy regarding the state of the shipping fleet int he St Laurence
+                        an ongoing strategy regarding the state of the shipping fleet in the St Laurence
                     </Card>
                 </div>
             </SectionPanel>

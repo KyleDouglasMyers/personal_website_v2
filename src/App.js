@@ -35,7 +35,7 @@ function App() {
                 currentPage = <FednavPage />
                 break;
             default:
-            // code block
+                currentPage = null;
         }
     }
 
