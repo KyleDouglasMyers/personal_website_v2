@@ -1,6 +1,8 @@
 import { forwardRef, useRef } from 'react'
 import { useSelector } from 'react-redux';
 import { BiChevronRight } from 'react-icons/bi';
+import { RxDot } from "react-icons/rx";
+
 
 import classNames from 'classnames'
 
@@ -114,23 +116,32 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
         'm-3',
         'p-3',
         'shadow',
-        'text-[1.8vh]'
+        'text-[1.8vh]',
+        'hover:scale-100'
     )
 
     const projectTitleClassnames = classNames(
         'text-[3vh]',
     )
 
-    const formLabelClasses = classNames(
-        'm-[1vh]',
-        'flex',
-        ' flex-col'
-    )
+    // Form classes if needed
+    // const formLabelClasses = classNames(
+    //     'm-[1vh]',
+    //     'flex',
+    //     ' flex-col'
+    // )
 
-    const formInputClasses = classNames(
-        'mt-[1vh]',
-        'border',
-        'pl-[4px]'
+    // const formInputClasses = classNames(
+    //     'mt-[1vh]',
+    //     'border',
+    //     'pl-[4px]'
+    // )
+
+    const jobListItemClasses = classNames(
+        'flex',
+        'items-center',
+        'text-center',
+        'text-[3vh]'
     )
 
     return (
@@ -239,9 +250,6 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
             </SectionPanel>
             <SectionPanel ref={projectsRef} title='Projects' className='min-w-[1000px]'>
                 <div className='flex flex-row flex-wrap mt-10'></div>
-                <Card title='Industrial Projects Website' className={projectCardItemClassNames} titleClasses={projectTitleClassnames} hasFooter={false}>
-                    Developed and deployed a React.js website from scratch leaveraging Microsoft Azure CI/CD pipelines.
-                </Card>
                 <Card title='Facial Recognition Webcam' className={projectCardItemClassNames} titleClasses={projectTitleClassnames} hasFooter={false}>
                     Creating a deep learning facial recognition for my face using VGG16 base architecture with the Tensorflow functional model.
                 </Card>
@@ -249,8 +257,22 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
                     Created this personal website using React.js, along with the React Redux library for a custom navigation and state system.
                 </Card>
             </SectionPanel>
-            <SectionPanel ref={contactRef} title='Contact' className='min-w-[700px]'>
-                <form className='flex flex-col mt-5'>
+            <SectionPanel ref={contactRef} title='Contact' className='min-w-[700px] whitespace-pre-line'>
+                <h1 className='text-[2.5vh] mb-[2vh]'>I'm currently looking for work as a software engineer in the following domains:</h1>
+                <ul className='text-[2.5vh] font-[Oxanium-Bold] mb-[2vh]'>
+                    <li className={jobListItemClasses}><RxDot />Machine Learning Engineer - Infrastructure</li>
+                    <li className={jobListItemClasses}><RxDot />Machine Learning Engineer - Research</li>
+                    <li className={jobListItemClasses}><RxDot />Backend Software Engineer</li>
+                    <li className={jobListItemClasses}><RxDot />Frontend Software Engineer</li>
+                </ul>
+                <h1 className='text-[2.5vh] mb-[2vh]'>Ideally looking for work in a small startup company  that is just starting out, or in a large tech firm that I can learn a lot from and expand my skills</h1>
+                <h1 className='text-[2.5vh] mb-[2vh]'>If I check any of those boxes for you, 
+                please feel free to let me know on my email {' '}
+                <address className='inline font-[Oxanium-Bold] hover:text-blue-300'><a href="mailto:kyle.myers@mail.mcgill.ca">kyle.myers@mail.mcgill.ca</a></address>
+                {' '} or you can contact me on any of the links to my socials.</h1>
+                <h1 className='text-[2.5vh] mb-[2vh]'>Thanks for coming!</h1>
+                {/* FORM CODE FOR LATER IF NEEDED / WANTED*/}
+                {/* <form className='flex flex-col mt-5'>
                     <label className={formLabelClasses} value='Name'>Name:
                         <input className={formInputClasses} type='text' />
                     </label>
@@ -264,7 +286,7 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
                         <textarea className='min-h-[10vh] min-w-[10vw] max-w-[40vw] mt-2 border pl-1 text-start' type='textarea' />
                     </label>
                     <button className='max-w-[100px] m-3 hover:text-blue-500 border'>Send</button>
-                </form>
+                </form> */}
             </SectionPanel>
 
             {/* <SectionPanel ref={extraRef} title='Extra'>
