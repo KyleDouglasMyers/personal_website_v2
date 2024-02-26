@@ -103,10 +103,8 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
     )
 
     const experienceCardClassNames = classNames(
-        'min-w-[30vw]',
-        'min-h-[30vh]',
-        'max-w-[35vw]',
-        'max-h-[80vh]',
+        'w-[35vw]',
+        'max-h-[65vh]',
         'p-[2vh]',
         'm-[5vh]',
         'shadow-[0_0_30px_0px_rgba(0,0,0,0.4)]'
@@ -132,12 +130,12 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
     const formInputClasses = classNames(
         'mt-[1vh]',
         'border',
-        'pl-[1vw]'
+        'pl-[4px]'
     )
 
     return (
         <div ref={ref} className={HorizontalScrollSectionClasses}>
-            <SectionPanel ref={homeRef} title='Hello, my name is'>
+            <SectionPanel ref={homeRef} title='Hello, my name is' className='min-w-[50vw]'>
                 <h1 className='font-[Oxanium-Bold] text-[7vh]'>Kyle Myers</h1>
                 <p className='whitespace-normal text-[1.3vw]'>
                     I'm a graduated in
@@ -168,7 +166,7 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
                         <img className='w-[20vw] h-[15vh] bg-black object-right mt-7 translate-x-52' alt='certificate' />
                     </div></div>
             </SectionPanel>
-            <SectionPanel ref={experienceRef} title='Experience' className='min-w-[130vw]'>
+            <SectionPanel ref={experienceRef} title='Experience' className='min-w-[120vw]'>
                 <div className='flex flex-row justify-around'>
                     <Card className={experienceCardClassNames} title='Industrial Projects' date='August 2022 - Current' id='industrialProjectsPage'>
                         Lead Software Engineer{'\n\n'}

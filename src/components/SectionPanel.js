@@ -6,11 +6,10 @@ const SectionPanel = forwardRef(function SectionPanel({title, children, classNam
     const sectionPanelClassNames = classNames(
         '', 
         'overflow-y-hidden',
-        'min-w-[50vw]',
         'p-[2vw]',
         // For sizing
-        'border-red-200',
-        'border-2',
+        // 'border-red-200',
+        // 'border-2',
         className
     );
 

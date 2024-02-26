@@ -3,9 +3,15 @@ import { LuDot } from "react-icons/lu";
 import classNames from "classnames";
 
 //Image imports
+import IndustrialProjectsLogo from '../content/industrialProjectsLogo.jpg'
 import ipScreenshot1 from '../content/ipScreenshot1.png'
 import ipScreenshot2 from '../content/ipScreenshot2.png'
 import ipScreenshot3 from '../content/ipScreenshot3.png'
+
+import reactJsLogo from '../content/reactLogo.png'
+import coreUiLogo from '../content/coreUILogo.jpg'
+import emailJSLogo from '../content/emailJSLogo.png'
+import googleMapsApi from '../content/googleMapsApiLogo.png'
 
 
 function IndustrialProjectsPage() {
@@ -36,7 +42,7 @@ function IndustrialProjectsPage() {
 
     const ipImagesClasses = classNames(
         'max-h-[20vh]',
-        'max-w-[30vw]',
+        'max-w-[20vw]',
         'object-contain',
         'm-[2vw]',
         //Transition classes
@@ -59,6 +65,8 @@ function IndustrialProjectsPage() {
             <p className={paragraphClasses}>
                 Industrial Projects Ltd. is an eastern Canadian distributor for pneumatic and hydraulic valves. They also distribute filter components, induing but not limited to housings, bags and cartridges.
             </p>
+            <img src={IndustrialProjectsLogo} alt='ipLogo'/>
+
             <p className={paragraphClasses}>
                 When I arrived at Industrial projects they were tracking orders using papers, their website had not been updated since 2013 and emails were being stored locally. They hired me to bring they technology stack up to date, and to do a full reform of order tracking.
             </p>
@@ -78,6 +86,11 @@ function IndustrialProjectsPage() {
                 <li className={pointListItemClasses}><LuDot />Create code that would allow for easy future additions for new products and team members</li>
                 <li className={pointListItemClasses}><LuDot /><span>Website url:{'  '} <a className='underline hover:text-blue-200' href="https://www.industrialprojects.ca">https://www.industrialprojects.ca</a></span></li>
             </ul>
+            <div className='flex flex-row max-w-inherit'>
+                <img src={ipScreenshot1} alt='ipScreenshot1' className={ipImagesClasses} />
+                <img src={ipScreenshot2} alt='ipScreenshot2' className={ipImagesClasses} />
+                <img src={ipScreenshot3} alt='ipScreenshot3' className={ipImagesClasses} />
+            </div>
             <p className={paragraphClasses + ' underline'}>
                 Key business takeaways:
             </p>
@@ -92,9 +105,10 @@ function IndustrialProjectsPage() {
             </p>
 
             <div className='flex flex-row max-w-inherit'>
-                <img src={ipScreenshot1} alt='ipScreenshot1' className={ipImagesClasses} />
-                <img src={ipScreenshot2} alt='ipScreenshot2' className={ipImagesClasses} />
-                <img src={ipScreenshot3} alt='ipScreenshot3' className={ipImagesClasses} />
+                <img src={reactJsLogo} alt='reactLogo' className={ipImagesClasses} />
+                <img src={coreUiLogo} alt='coreUILogo' className={ipImagesClasses} />
+                <img src={emailJSLogo} alt='emailJsLogo' className={ipImagesClasses} />
+                <img src={googleMapsApi} alt='googleMapsApi' className={ipImagesClasses} />
             </div>
             <h3 className={subTitleClasses}>
                 Create and deploy a new order tracking system using cloud infrastructure:

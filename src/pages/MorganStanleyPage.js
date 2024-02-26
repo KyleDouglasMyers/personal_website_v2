@@ -3,6 +3,7 @@ import { LuDot } from "react-icons/lu";
 import classNames from "classnames"
 
 // Image imports
+import morganStanleyLogo from '../content/morganStanleyLogo.jpeg'
 import springLogo from '../content/springLogo.png';
 import travisCiLogo from '../content/travisCiLogo.png';
 import dockerLogo from '../content/dockerLogo.png';
@@ -59,6 +60,7 @@ function MorganStanleyPage() {
             <p className={paragraphClasses}>
                 Morgan Stanley is a multinational investment bank and financial services company ranking 61st in the list of Fortune 500 companies. They have offices more than 75,000 employees in 41 countries and the firm's clients include corporations, governments, institutions, and individual people all around the world.
             </p>
+            <img src={morganStanleyLogo} alt='morganStanleyLogo' className='max-w-[30vw]'/>
             <p className={paragraphClasses}>
                 I was fortunate enough to work for one of the best financial companies in the world as a software engineering intern. I spent 4 months talking and working with some of the most experienced individuals behind the technology stack responsible for banking and trading information processing. I was also exposed to a variety of experienced individuals on the fin-tech quant team as that was a huge interest of mine.
             </p>
@@ -66,7 +68,7 @@ function MorganStanleyPage() {
                 My roles and responsibilities working at Morgan Stanley were as follows:
             </p>
             <h3 className={subTitleClasses}>
-                Creating a spring cloud gate:
+                Creating a spring cloud gateway:
             </h3>
             <ul>
                 <li className={pointListItemClasses}><LuDot />Create a proof of concept Spring Cloud Gateway for managing incoming and outgoing settlement requests</li>
