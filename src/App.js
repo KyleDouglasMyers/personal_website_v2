@@ -11,6 +11,9 @@ import Page from './pages/Page';
 import IndustrialProjectsPage from './pages/IndustrialProjectsPage';
 import MorganStanleyPage from './pages/MorganStanleyPage';
 import FednavPage from './pages/FednavPage';
+import ImageClassificationProjectPage from './pages/ImageClassificationProjectPage';
+import PersonalWebsitePage from './pages/PersonalWebsitePage';
+import FacialRecognitionPage from './pages/FacialRecognitionPage';
 
 
 function App() {
@@ -33,6 +36,15 @@ function App() {
                 break;
             case 'fednavPage':
                 currentPage = <FednavPage />
+                break;
+            case 'imageClassificationProjectPage':
+                currentPage = <ImageClassificationProjectPage />
+                break;
+            case 'personalWebsitePage':
+                currentPage = <PersonalWebsitePage />
+                break;
+            case 'faceRecPage':
+                currentPage = <FacialRecognitionPage/>
                 break;
             default:
                 currentPage = null;

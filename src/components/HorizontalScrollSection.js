@@ -11,7 +11,7 @@ import Card from './Card'
 
 
 //Photo imports
-import headshot from '../content/times_image.webp'
+import headshot from '../content/headshot.jpeg'
 
 const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(props, ref) {
 
@@ -155,7 +155,9 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
                     <span className="font-[Oxanium-Bold]"> machine learning, artificial intelligence, robotics and comupter vision</span>.
                     This is my protfolio website to show off my projects that I've been working on. Enjoy :D
                 </p>
-                <img className='w-[20vw] h-[30vh] pt-[5vh]' src={headshot} alt='headshot' />
+                <div className='flex flex-row justify-center'>
+                    <img className='w-[20vw] h-[30vh] mt-[5vh] rounded-full' src={headshot} alt='headshot' />
+                </div>
 
             </SectionPanel>
             <SectionPanel ref={aboutRef} title='About' className='min-w-[80vw]'>
@@ -250,11 +252,14 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
             </SectionPanel>
             <SectionPanel ref={projectsRef} title='Projects' className='min-w-[1000px]'>
                 <div className='flex flex-row flex-wrap mt-10'></div>
-                <Card title='Facial Recognition Webcam' className={projectCardItemClassNames} titleClasses={projectTitleClassnames} hasFooter={false}>
+                <Card title='Facial Recognition Webcam' className={projectCardItemClassNames} titleClasses={projectTitleClassnames} hasFooter={false} id='faceRecPage'>
                     Creating a deep learning facial recognition for my face using VGG16 base architecture with the Tensorflow functional model.
                 </Card>
-                <Card title='Personal Website' className={projectCardItemClassNames} titleClasses={projectTitleClassnames} hasFooter={false}>
+                <Card title='Personal Website' className={projectCardItemClassNames} titleClasses={projectTitleClassnames} hasFooter={false} id='personalWebsitePage'>
                     Created this personal website using React.js, along with the React Redux library for a custom navigation and state system.
+                </Card>
+                <Card title='Image Classification' className={projectCardItemClassNames} titleClasses={projectTitleClassnames} hasFooter={false} id='imageClassificationProjectPage'>
+                    Image classification using tensorflow and convolutional neural network - binary classificaiton to identify happy people and sad people
                 </Card>
             </SectionPanel>
             <SectionPanel ref={contactRef} title='Contact' className='min-w-[700px] whitespace-pre-line'>
@@ -266,10 +271,10 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
                     <li className={jobListItemClasses}><RxDot />Frontend Software Engineer</li>
                 </ul>
                 <h1 className='text-[2.5vh] mb-[2vh]'>Ideally looking for work in a small startup company  that is just starting out, or in a large tech firm that I can learn a lot from and expand my skills</h1>
-                <h1 className='text-[2.5vh] mb-[2vh]'>If I check any of those boxes for you, 
-                please feel free to let me know on my email {' '}
-                <address className='inline font-[Oxanium-Bold] hover:text-blue-300'><a href="mailto:kyle.myers@mail.mcgill.ca">kyle.myers@mail.mcgill.ca</a></address>
-                {' '} or you can contact me on any of the links to my socials.</h1>
+                <h1 className='text-[2.5vh] mb-[2vh]'>If I check any of those boxes for you,
+                    please feel free to let me know on my email {' '}
+                    <address className='inline font-[Oxanium-Bold] hover:text-blue-300'><a href="mailto:kyle.myers@mail.mcgill.ca">kyle.myers@mail.mcgill.ca</a></address>
+                    {' '} or you can contact me on any of the links to my socials.</h1>
                 <h1 className='text-[2.5vh] mb-[2vh]'>Thanks for coming!</h1>
                 {/* FORM CODE FOR LATER IF NEEDED / WANTED*/}
                 {/* <form className='flex flex-col mt-5'>
