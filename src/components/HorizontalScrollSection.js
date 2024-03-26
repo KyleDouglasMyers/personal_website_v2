@@ -12,6 +12,8 @@ import Card from './Card'
 
 //Photo imports
 import headshot from '../content/headshot.jpeg'
+import mcgillLogo from '../content/mcgillEngLogo.png'
+import degree from '../content/Degree.png'
 
 const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(props, ref) {
 
@@ -174,9 +176,9 @@ const HorizontalScrollSection = forwardRef(function HorizontalScrollSection(prop
                         I'm currently running my family business and restructuring the current
                         technology stack.
                     </p>
-                    <div className='p-10 min-w-[400px]'>
-                        <img className='w-[20vw] h-[15vh] bg-black ' alt='degree' />
-                        <img className='w-[20vw] h-[15vh] bg-black object-right mt-7 translate-x-52' alt='certificate' />
+                    <div className='pl-[5vw] pr-[5vw] pr-10 min-w-[400px]'>
+                        <img src={mcgillLogo} className='max-w-[30vw]' alt='degree' />
+                        <img src={degree} className='max-w-[30vw] object-right mt-7' alt='certificate' />
                     </div></div>
             </SectionPanel>
             <SectionPanel ref={experienceRef} title='Experience' className='min-w-[120vw]'>
