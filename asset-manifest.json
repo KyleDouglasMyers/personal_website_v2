@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/personal_website_v2/static/css/main.4be2b93a.css",
-    "main.js": "/personal_website_v2/static/js/main.a407b3ed.js",
+    "main.css": "/personal_website_v2/static/css/main.b862fa04.css",
+    "main.js": "/personal_website_v2/static/js/main.d5b0324e.js",
+    "static/media/Degree.png": "/personal_website_v2/static/media/Degree.db5c57020e57f81d86f1.png",
     "static/media/ipScreenshot1.png": "/personal_website_v2/static/media/ipScreenshot1.72a4fef324a099edfec2.png",
     "static/media/morganStanleyLogo.jpeg": "/personal_website_v2/static/media/morganStanleyLogo.5661149707a06ab085fc.jpeg",
     "static/media/facialExampleFrames.png": "/personal_website_v2/static/media/facialExampleFrames.5025751f0d5488cd9de0.png",
@@ -17,6 +18,7 @@
     "static/media/kubernetesLogo.jpeg": "/personal_website_v2/static/media/kubernetesLogo.fd4d529c726a397d1e2e.jpeg",
     "static/media/tfLogo.png": "/personal_website_v2/static/media/tfLogo.778a7a53d41aad747234.png",
     "static/media/tailwindLogo.png": "/personal_website_v2/static/media/tailwindLogo.9440f6b718743116ccb0.png",
+    "static/media/mcgillEngLogo.png": "/personal_website_v2/static/media/mcgillEngLogo.a85e89f2136694df954c.png",
     "static/media/dockerLogo.png": "/personal_website_v2/static/media/dockerLogo.42403916127d6400ed6b.png",
     "static/media/emailJSLogo.png": "/personal_website_v2/static/media/emailJSLogo.5e0bd6fb3b0367079e1e.png",
     "static/media/Oxanium-Light.ttf": "/personal_website_v2/static/media/Oxanium-Light.f874619d4986b11cd598.ttf",
@@ -34,11 +36,11 @@
     "static/media/kerberosLogo.png": "/personal_website_v2/static/media/kerberosLogo.098be45c6adedf93491c.png",
     "static/media/industrialProjectsLogo.jpg": "/personal_website_v2/static/media/industrialProjectsLogo.fd3a95a85e0cedb1f1df.jpg",
     "index.html": "/personal_website_v2/index.html",
-    "main.4be2b93a.css.map": "/personal_website_v2/static/css/main.4be2b93a.css.map",
-    "main.a407b3ed.js.map": "/personal_website_v2/static/js/main.a407b3ed.js.map"
+    "main.b862fa04.css.map": "/personal_website_v2/static/css/main.b862fa04.css.map",
+    "main.d5b0324e.js.map": "/personal_website_v2/static/js/main.d5b0324e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4be2b93a.css",
-    "static/js/main.a407b3ed.js"
+    "static/css/main.b862fa04.css",
+    "static/js/main.d5b0324e.js"
   ]
 }
