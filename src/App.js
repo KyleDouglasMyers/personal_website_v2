@@ -67,21 +67,28 @@ function App() {
     )
     return (
         <>
-            <div className={appClassNames} ref={appRef}>
-                <Navbar />
-                <div className={containerSectionClasses}>
-                    <Sidebar />
-                    <HorizontalScrollSection ref={scrollSectionRef} />
+        <div className='flex flex-col min-h-[100vh] min-w-[100vw] bg-black items-center justify-center'>
+            <h1 className='text-white'>
+                Sorry! My website is currently under rennovations/migration, please check back in a few days. I promise it will be back soon!!
+
+            </h1>
+            <h1 className='text-white'>- Kyle Myers :)</h1>
+            {/* <div className={appClassNames} ref={appRef}>
+                    <Navbar />
+                    <div className={containerSectionClasses}>
+                        <Sidebar />
+                        <HorizontalScrollSection ref={scrollSectionRef} />
+                    </div>
+
                 </div>
+                {(pageState === '') ? null :
 
-            </div>
-            {(pageState === '') ? null :
+                    <Page>
+                        {currentPage}
+                    </Page>
 
-                <Page>
-                    {currentPage}
-                </Page>
-
-            }
+                } */}
+        </div>
         </>
 
     )
