@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal_website_v2/static/css/main.5fa094fb.css",
-    "main.js": "/personal_website_v2/static/js/main.2c448736.js",
+    "main.js": "/personal_website_v2/static/js/main.5f84dd85.js",
     "static/media/Degree.png": "/personal_website_v2/static/media/Degree.db5c57020e57f81d86f1.png",
     "static/media/ipScreenshot1.png": "/personal_website_v2/static/media/ipScreenshot1.72a4fef324a099edfec2.png",
     "static/media/morganStanleyLogo.jpeg": "/personal_website_v2/static/media/morganStanleyLogo.5661149707a06ab085fc.jpeg",
@@ -37,10 +37,10 @@
     "static/media/industrialProjectsLogo.jpg": "/personal_website_v2/static/media/industrialProjectsLogo.fd3a95a85e0cedb1f1df.jpg",
     "index.html": "/personal_website_v2/index.html",
     "main.5fa094fb.css.map": "/personal_website_v2/static/css/main.5fa094fb.css.map",
-    "main.2c448736.js.map": "/personal_website_v2/static/js/main.2c448736.js.map"
+    "main.5f84dd85.js.map": "/personal_website_v2/static/js/main.5f84dd85.js.map"
   },
   "entrypoints": [
     "static/css/main.5fa094fb.css",
-    "static/js/main.2c448736.js"
+    "static/js/main.5f84dd85.js"
   ]
 }
