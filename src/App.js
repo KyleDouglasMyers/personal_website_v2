@@ -72,7 +72,7 @@ function App() {
                 <h1 className='text-white'>
                     New website link:
                 </h1>
-                <a href="https://kyledouglasmyers.github.io/personal_website/">Visit new website</a>
+                <a className='text-blue-500' href="https://kyledouglasmyers.github.io/personal_website/">Visit new website</a>
                 <h1 className='text-white'>- Kyle Myers :)</h1>
             </div>
             {/* <div className={appClassNames} ref={appRef}>
