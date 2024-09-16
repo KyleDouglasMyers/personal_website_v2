@@ -70,8 +70,9 @@ function App() {
         <div className='flex flex-col min-h-[100vh] min-w-[100vw] bg-black items-center justify-center'>
             <div className='p-10'>
                 <h1 className='text-white'>
-                    Sorry! My website is currently under rennovations/migration, please check back in a few days. I promise it will be back soon!!
+                    New website link:
                 </h1>
+                <a href="https://kyledouglasmyers.github.io/personal_website/">Visit new website</a>
                 <h1 className='text-white'>- Kyle Myers :)</h1>
             </div>
             {/* <div className={appClassNames} ref={appRef}>
